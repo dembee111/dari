@@ -1,0 +1,18 @@
+//
+// Pills
+//
+
+.nav-pills {
+    background-color: $nav-pills-link-bg;
+    color: $nav-pills-link-active-color;
+
+    .nav-link {
+        @include border-radius($nav-pills-border-radius);
+    }
+
+    .nav-link.active,
+    .show>.nav-link {
+        color: $nav-pills-link-active-color;
+        background-color: $nav-pills-link-active-bg;
+    }
+}

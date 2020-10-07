@@ -1,0 +1,25 @@
+//
+// Demo page
+//
+
+.heading {
+    margin-bottom: 50px;
+    background-image: url("#{$path-to-img}/Header/main-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #6c757d;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.heading .heading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: .5
+}

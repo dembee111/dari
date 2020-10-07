@@ -1,0 +1,324 @@
+/**
+ * All background classes
+ */
+
+// main bg cover
+.bg-cover {
+  background: no-repeat center center / cover;
+}
+
+// eco html
+.left-back {
+  position: absolute;
+  background-color: $second;
+  top: 0%;
+  left: 0;
+  bottom: 65%;
+  width: 50%;
+
+  @media (min-width: 576px) {
+    top: 5%;
+    left: 0;
+    bottom: 50%;
+    width: 60%;
+  }
+
+  @media (min-width: 992px) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
+
+// ceramic bg
+.left-back-brown {
+  position: absolute;
+  background-color: $primary;
+  top: 0;
+  left: 0;
+  bottom: 65%;
+  width: 70%;
+
+  @media (min-width: 992px) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
+
+// eco bg cover
+.b-gallery-second {
+  background-color: $second;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  width: 100%;
+  z-index: -3;
+
+  @media (min-width: 576px) {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    height: 40%;
+    width: 100%;
+  }
+}
+
+// ceramic bg gallery background
+.b-gallery-brown {
+  background-color: $primary;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  width: 100%;
+  z-index: -3;
+}
+
+// eco bg contact background
+.b-contact-second {
+  background-color: $second;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 35%;
+  width: 85%;
+  z-index: -3;
+
+  @media (min-width: 576px) {
+    bottom: 0;
+    left: 0;
+    top: 5%;
+    height: 30%;
+    width: 70%;
+  }
+
+  @media (min-width: 992px) {
+    bottom: 0;
+    left: 0;
+    top: 5%;
+    height: 70%;
+    width: 45%;
+  }
+}
+
+// plant bg contact background
+.b-contact-fourth {
+  background-color: $fourth;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 35%;
+  width: 85%;
+  z-index: -3;
+
+  @media (min-width: 576px) {
+    bottom: 0;
+    left: 0;
+    top: 10%;
+    height: 35%;
+    width: 75%;
+  }
+
+  @media (min-width: 992px) {
+    bottom: 0;
+    left: 0;
+    top: 25%;
+    height: 50%;
+    width: 45%;
+  }
+
+  @media (min-width: 1200px) {
+    bottom: 0;
+    left: 0;
+    top: 5%;
+    height: 70%;
+    width: 45%;
+  }
+}
+
+// Rectancle
+.rectancle {
+  position: absolute;
+  left: -10%;
+  top: -8%;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+// Restaurant Header background
+.b-third-gradient {
+  background: linear-gradient(4deg,
+      rgba(242, 96, 89, 1) 0%,
+      rgba(243, 119, 92, 1) 50%,
+      rgba(243, 122, 92, 1) 100%);
+}
+
+.back-img {
+  position: absolute;
+  top: -35px;
+  left: -15px;
+}
+
+// ceramic contact background
+.b-contact-brown {
+  background-color: $primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 65%;
+  width: 70%;
+  z-index: -3;
+
+  @media (min-width: 992px) {
+    bottom: 0;
+    left: 0;
+    top: 5%;
+    height: 70%;
+    width: 45%;
+  }
+}
+
+// plant background
+.bg-fourth-right {
+  background-color: $cyan;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  border: 1px solid $white;
+  z-index: 0;
+
+  @media (min-width: 576px) {
+    bottom: 40%;
+    right: 0;
+    top: 5%;
+    height: 50%;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    bottom: 30%;
+    right: 0;
+    top: 20%;
+    height: 65%;
+    width: 50%;
+  }
+
+  @media (min-width: 992px) {
+    bottom: 10%;
+    right: 0;
+    top: 20%;
+    height: 65%;
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    bottom: 15%;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 50%;
+  }
+
+  @media (min-width: 1600px) {
+    bottom: 10%;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 50%;
+  }
+}
+
+// ceramic header background
+.bg-brown-header {
+  background-color: $brown;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+
+  @media (min-width: 992px) {
+    height: 56%;
+  }
+}
+
+// plant gallery background
+.b-gallery-fourth {
+  background-color: $fourth;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  width: 100%;
+  z-index: -3;
+
+  @media (min-width: 576px) {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    width: 100%;
+  }
+}
+
+// Restaurant text background 
+.back-restaurent {
+  position: relative;
+  background-image: url("#{$path-to-img}/photos/back-restaurant@2x.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .overlay-back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba($black-overlay, 0.5);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 2%;
+    right: 2%;
+    border: 1px solid $white;
+  }
+}
+
+// restaurant accessor wheat
+.wheat {
+  position: absolute;
+  bottom: 0;
+  left: -0.8%;
+  z-index: 1;
+}

@@ -1,0 +1,12 @@
+/**
+ * Custom variables followed by theme variables followed by Bootstrap variables
+ * to ensure cascade of styles.
+ */
+
+// Bootstrap button
+.btn-xl {
+    padding: $input-btn-padding-y-xl $input-btn-padding-x-xl;
+    font-size: $input-btn-font-size-xs;
+    border-radius: 0;
+    border: 1px solid $white;
+}

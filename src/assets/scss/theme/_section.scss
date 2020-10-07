@@ -1,0 +1,33 @@
+//
+// Media group
+//
+.media-group {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+    position: relative;
+    cursor: pointer;
+    transition: .6s ease;
+
+    @media (min-width: 1600px) {
+        margin-bottom: 2rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 2px;
+        background-color: $third;
+    }
+
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+
+}

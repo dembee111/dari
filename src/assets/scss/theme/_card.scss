@@ -1,0 +1,107 @@
+//
+// card.scss
+// Extended from Bootstrap
+//
+
+
+// Bootstrap card
+.card {
+    border-radius: 0;
+    border: $card-border-width solid $card-border-color;
+}
+
+// Card img overlay
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $card-img-overlay-padding;
+
+    @include media-breakpoint-up(sm) {
+        padding: $card-img-overlay-padding-md;
+    }
+}
+
+.card-overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+// overlay for plant
+.overlay-c {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba($black-overlay, 0.4);
+    border: 1px solid $white;
+}
+
+// overlay for demo page
+.overlay-d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(#212529, 0.7);
+    border: 1px solid $white;
+}
+
+.card-overlay:hover .overlay-c,
+.card-overlay:hover .overlay-d {
+    opacity: 1;
+}
+
+
+// overlay text
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+// overlay text bottom line
+.text-h4::after {
+    position: absolute;
+    left: 49%;
+    bottom: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: $white;
+    content: "";
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+// overlay for plant line
+.text-after::after {
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    background-color: $white;
+    content: "";
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}

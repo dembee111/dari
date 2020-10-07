@@ -1,0 +1,21 @@
+//
+// forms.scss
+// Extended from Boostrap
+//
+
+//Form border
+.form-control {
+    border-radius: 0;
+    font-style: italic;
+    background-color: rgba($color:$white, $alpha: 0.7);
+}
+
+// Form border brown
+.form-border-brown {
+    border: $input-border-width solid $input-border-color-brown;
+}
+
+// Form border white
+.form-border-white {
+    border: $input-border-width solid $input-border-color-white;
+}

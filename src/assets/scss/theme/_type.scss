@@ -1,0 +1,135 @@
+//
+// type.scss
+// Extended from Bootstrap
+//
+
+// Font
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  src: url("#{$path-to-fonts}/Montserrat/Montserrat-LightItalic.ttf") format("ttf"),
+  url("#{$path-to-fonts}/Montserrat/Montserrat-LightItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  src: url("#{$path-to-fonts}/Montserrat/Montserrat-Light.ttf") format("ttf"),
+  url("#{$path-to-fonts}/Montserrat/Montserrat-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  src: url("#{$path-to-fonts}/Montserrat/Montserrat-Regular.ttf") format("ttf"),
+  url("#{$path-to-fonts}/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  src: url("#{$path-to-fonts}/Montserrat/Montserrat-Medium.ttf") format("ttf"),
+  url("#{$path-to-fonts}/Montserrat/Montserrat-Medium.ttf") format("ttf");
+}
+
+// // Headings
+
+h1,
+h2,
+.h1,
+.h2 {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  letter-spacing: $headings-letter-spacing;
+}
+
+h1,
+.h1 {
+  line-height: $h1-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h1-font-size-md;
+  }
+}
+
+h2,
+.h2 {
+  line-height: $h2-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h2-font-size-md;
+  }
+}
+
+h3,
+.h3 {
+  line-height: $h3-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h3-font-size-md;
+  }
+}
+
+h4,
+.h4 {
+  line-height: $h4-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h4-font-size-md;
+  }
+}
+
+h5,
+.h5 {
+  line-height: $h5-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h5-font-size-md;
+  }
+}
+
+h6,
+.h6 {
+  line-height: $h6-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h6-font-size-md;
+  }
+}
+
+// Blockquotes
+.blockquote {
+  margin-bottom: $spacer;
+  @include font-size($blockquote-font-size);
+  border: 1px solid $white;
+}
+
+.blockquote-footer {
+  display: block;
+  @include font-size($blockquote-small-font-size);
+  color: $blockquote-small-color;
+
+  &::after {
+    content: "\2014\00A0"; // em dash, nbsp
+  }
+}
+
+// Lead
+.lead {
+  @include font-size($lead-font-size-sm);
+  font-weight: $lead-font-weight;
+
+  @include media-breakpoint-up(xxl) {
+    font-size: $lead-font-size;
+  }
+}
