@@ -55,3 +55,46 @@
     $(".navbar").removeClass("d-none");
   });
 })(jQuery); // End of use strict
+
+// Message Sent Message Contact Form
+function messageSent() {
+  $(".alert-success").fadeIn(300);
+  setTimeout(function () {
+    $(".alert-success").fadeOut(300);
+  }, 3000);
+}
+
+function alertSent() {
+  $(".alert-danger").fadeIn(300);
+  setTimeout(function () {
+    $(".alert-danger").fadeOut(300);
+  }, 3000);
+}
+
+$("#onClickModal").on("click", function () {
+  if (
+    $("#fname").val() == "" ||
+    $("#mail").val() == "" ||
+    $("#textarea").val() == ""
+  ) {
+    alertSent();
+  } else {
+    messageSent();
+    $("#mainForm").trigger("reset");
+  }
+});
+
+$("#onClick").on("click", function () {
+  if (
+    $("#fname1").val() == "" ||
+    $("#mail1").val() == "" ||
+    $("#textarea1").val() == ""
+  ) {
+    alertSent();
+  } else {
+    Swal.fire("Thank You!", "Your message has been sent.", "success");
+    setTimeout(function () {
+      $("#bodyForm").trigger("reset");
+    }, 3000);
+  }
+});

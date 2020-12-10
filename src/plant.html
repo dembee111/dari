@@ -252,21 +252,28 @@
                     <h2>Contact Us</h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form.</p>
-                    <form>
+
+                    <div class="alert alert-success" role="alert">
+                        Thank You! Your message has been sent.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        Please empty field
+                    </div>
+                    <form onsubmit="return false" id="bodyForm">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control border-white" placeholder="First name">
+                                <input type="text" class="form-control" placeholder="First name" id="fname1" required>
                             </div>
                             <div class="col">
-                                <input type="email" class="form-control border-white" placeholder="Mail Address">
+                                <input type="email" class="form-control" placeholder="Mail Address" id="mail1" required>
                             </div>
                             <div class="col-12 mt-6">
-                                <textarea class="form-control border-white" rows="5" placeholder="Textarea"
+                                <textarea class="form-control" rows="5" placeholder="Textarea" id="textarea1"
                                     required></textarea>
                             </div>
 
                             <div class="col-12 mt-6">
-                                <button type="submit" class="btn btn-fourth text-white btn-xl">
+                                <button class="btn btn-fourth text-white btn-xl" id="onClick">
                                     Send Mail
                                 </button>
                             </div>
@@ -535,21 +542,29 @@
 
                     <div class="row justify-content-center">
                         <div class="col-11 mb-5">
-                            <form>
+                            <div class="alert alert-success" role="alert">
+                                Thank You! Your message has been sent.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                Please empty field
+                            </div>
+                            <form action="#" id="mainForm">
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="First name">
+                                        <input type="text" class="form-control" placeholder="First name" id="fname"
+                                            required>
                                     </div>
                                     <div class="col">
-                                        <input type="email" class="form-control" placeholder="Mail Address">
+                                        <input type="email" class="form-control" placeholder="Mail Address" id="mail"
+                                            required>
                                     </div>
                                     <div class="col-12 mt-6">
-                                        <textarea class="form-control" rows="5" placeholder="Textarea"
+                                        <textarea class="form-control" rows="5" placeholder="Textarea" id="textarea"
                                             required></textarea>
                                     </div>
 
                                     <div class="col-12 mt-6">
-                                        <button type="submit" class="btn btn-success btn-xl">
+                                        <button type="submit" class="btn btn-success btn-xl" id="onClickModal">
                                             Send Mail
                                         </button>
                                     </div>

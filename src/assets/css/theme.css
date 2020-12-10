@@ -12157,7 +12157,7 @@ a.text-fourth-desat:hover, a.text-fourth-desat:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  height: auto;
+  height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -12223,6 +12223,12 @@ a.text-fourth-desat:hover, a.text-fourth-desat:focus {
 
 .modal-link {
   text-decoration: none; }
+
+.alert-success {
+  display: none; }
+
+.alert-danger {
+  display: none; }
 
 @media (min-width: 992px) {
   #mainNav.navbar-shrink {

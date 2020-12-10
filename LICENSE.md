@@ -4,7 +4,7 @@
 
 Dari is designed, developed and supported by Good Themes.
 
-Use of this theme is governed by the license terms of the Bootstrap Themes platform (https://themeforest.net/licenses)
+Use of this theme is governed by the license terms of the Bootstrap Themes platform (https://m/licenses)
 
 ### Image License
 
